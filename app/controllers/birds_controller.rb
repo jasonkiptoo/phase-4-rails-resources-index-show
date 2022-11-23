@@ -12,7 +12,7 @@ class BirdsController < ApplicationController
         render json: bird
 
        else
-        render json: {error: "Not found"}
+        render json: {error: "Not found"}, status :not_found
 
        end
 
